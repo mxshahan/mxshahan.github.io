@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Orkney_Bold";
+    src: url("/Assets/Orkney_Bold.otf");
+}
+
+@font-face {
+    font-family: "Orkney_Medium";
+    src: url("/Assets/Orkney_Medium.otf");
+}
+
+body {
+    font-family: Orkney_Medium;
+    transition: 0.1s;
+}
+
+#logo {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.right {
+    width: 800px;
+    margin: 100px 0 0 0;
+}
+
+#hello {
+    margin: 150px 0 0 50px;
+    width: 300px;
+}
+
+#character {
+    position: absolute;
+    margin: -210px 0 0 320px;
+}
+
+.mHomeContent {
+    display: none;
+}
+
+#loaderOwl>svg:nth-child(1) {
+    margin-top: -200px;
+}
+
+.backBTN,
+.frontBTN {
+    background-color: #d76a6a;
+    border: 1px solid #d76a6a;
+    color: #f3d7c3;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+
+.backBTN:hover {
+    color: white;
+    background-color: black;
+}
+
+.frontBTN:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+@media only screen and (max-device-width: 480px) {
+    .body {
+        height: 800px !important;
+    }
+
+    .homeContent {
+        display: none;
+    }
+
+    .mHomeContent {
+        display: block;
+        margin-top: 80px;
+        width: 100%;
+        text-align: center
+    }
+
+    #character {
+        display: none;
+    }
+
+    #loaderOwl>svg:nth-child(1) {
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angella Tham</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../mainStyle.css">
+    <link href="../Assets/favicon.png" type="image/x-icon" rel="icon" />
+</head>
+
+
+<body>
+    <div class="container-fluid">
+        <div class="container" style="padding: 0;">
+
+            <div class="cv">
+                <img src="../Assets/cv.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        setTimeout(function () {
+            $('.loader_bg').fadeToggle();
+        }, 18);
+
+        $(document).ready(function () {
+            $('.body').hide().delay(18).fadeIn('slow');
+        });
+
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('loaderOwl'),
+            path: '../Assets/loader.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+        });
+
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('logo'),
+            path: '../Assets/logo.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+        });
+    </script>
+
+</body>
+
+
+<style>
+    .cv {
+        text-align: center;
+    }
+
+    .body {
+        height: 1500px;
+        border: 20px solid #f3d7c3;
+        padding: 0;
+    }
+
+    .cv img {
+        width: 900px;
+    }
+
+    @media only screen and (max-device-width: 480px) {
+        .cv img {
+            width: 450px;
+        }
+    }
+</style>
+
+</html>
