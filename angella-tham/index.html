@@ -13,15 +13,17 @@
 
 
 <body>
-    <div class="loader_bg" style="margin-top: -200px; background-color: #f1d5c1;">
+    <div class="loader_bg" style="background-color: #f1d5c1; height: 100vh; overflow: hidden;">
         <div id="loaderOwl"></div>
     </div>
 
 
-    <div class="body container-fluid" style="border: 20px solid #f3d7c3; height: 950px; padding: 0;">
+    <div class="body container-fluid" style="border: 20px solid #f3d7c3; height: 1000px; padding: 0;">
         <div class="container" style="padding: 0;">
             <header>
-                <div id="logo"></div>
+                <a href="/">
+                    <div id="logo"></div>
+                </a>
             </header>
 
             <div class="mHomeContent">
@@ -37,27 +39,26 @@
                     <img class="right img-fluid" src="Assets/right.png" alt="">
                 </div>
             </div>
+            <div>
+                <div id="character"></div>
 
-            <footer>
-                <div>
-                    <div id="character"></div>
-                    <img class="img-fluid" style="width: 100%; margin-top: 130px;" src="Assets/footer.png" alt="">
-                </div>
-                <div class="d-flex justify-content-between homeBtn">
-                    <a href="">
-                        <img style="width: 100px; margin: -130px 0 0 35px; border-radius: 6px;" src="Assets/hi.png"
-                            alt="">
-                    </a>
-
-                    <a href="./Pages/design.html">
-                        <img style="margin: -130px 35px 0px 0px; width: 160px; border-radius: 6px;"
-                            src="Assets/design.png" alt="">
-                    </a>
-                </div>
-
-            </footer>
-
+            </div>
         </div>
+
+        <footer>
+            <img class="img-fluid" style="width: 100%; margin-top: 130px;" src="Assets/footer.png" alt="">
+
+            <div class="d-flex justify-content-between homeBtn">
+                <a href="./Pages/sayHi.html">
+                    <img style="width: 100px; margin: -170px 0 0 35px; border-radius: 6px;" src="Assets/hi.png" alt="">
+                </a>
+
+                <a href="./Pages/design.html">
+                    <img style="margin: -170px 35px 0px 0px; width: 160px; border-radius: 6px;" src="Assets/design.png"
+                        alt="">
+                </a>
+            </div>
+        </footer>
     </div>
 
 
@@ -73,6 +74,10 @@
         setTimeout(function () {
             $('.loader_bg').fadeToggle();
         }, 1800);
+
+        $(document).ready(function () {
+            $('.body').hide().delay(1800).fadeIn('slow');
+        });
 
         var animation = bodymovin.loadAnimation({
             container: document.getElementById('loaderOwl'),
