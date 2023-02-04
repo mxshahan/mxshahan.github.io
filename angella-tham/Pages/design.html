@@ -17,35 +17,40 @@
 
 
     <div class="body container-fluid"
-        style="border: 20px solid #f3d7c3; height: 1000px; padding: 0; background-color: #f3d7c3;">
+        style="border: 20px solid #f3d7c3; height: 950px; padding: 0; background-color: #f3d7c3;">
         <div class="container" style="padding: 0;">
             <header>
                 <a href="/">
                     <div id="logo"></div>
                 </a>
             </header>
-            <div class="text-center imgDiv"">
-                <img src=" ../Assets/formImg.png" alt="">
+            <div class="text-center" style="margin: 100px 0 0 0;">
+                <img src="../Assets/formImg.png" alt="">
                 <form action="">
                     <input type="text" class="formInput" placeholder="say the magic word...">
                     <button class="formBtn">unlock portfolio</button>
                 </form>
             </div>
 
+            <footer>
+                <div>
+                    <img class="img-fluid" style="width: 100%; margin-top: 340px;" src="../Assets/footer1.png" alt="">
+                    <div class="d-flex justify-content-between" style="margin: -35px 0px 0px 0px;">
+                        <a href="">
+                            <img style="width: 100px; margin: -130px 0 0 35px; border-radius: 6px;"
+                                src="../Assets/hi.png" alt="">
+                        </a>
 
+                        <a href="./Pages/design.html">
+                            <img style="margin: -130px 35px 0px 0px; width: 160px; border-radius: 6px;"
+                                src="../Assets/design.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </footer>
 
         </div>
-
-        <footer>
-            <div>
-                <img class="img-fluid ftImg" src="../Assets/footer1.png" alt="">
-                <div class="d-flex justify-content-between btnDiv" style="margin: -135px 105px;">
-                    <a href="/" class="backBTN text-decoration-none"> go back </a>
-                    <a href="../Pages/sayHi.html" class="frontBTN text-decoration-none">just wanna say hi</a>
-                </div>
-            </div>
-
-        </footer>
     </div>
 
 
@@ -61,9 +66,6 @@
         setTimeout(function () {
             $('.loader_bg').fadeToggle();
         }, 500);
-        $(document).ready(function () {
-            $('.body').hide().delay(500).fadeIn('slow');
-        });
 
         var animation = bodymovin.loadAnimation({
             container: document.getElementById('logo'),
@@ -88,10 +90,6 @@
         margin: -150px 90px 0px 0px;
     }
 
-    .imgDiv {
-        margin: 100px 0 0 0
-    }
-
     .formInput {
         padding: 17px 50px;
         border: 1px solid white;
@@ -107,46 +105,6 @@
         border-radius: 0px 8px 8px 0px;
         color: #f3d7c3;
         font-family: Orkney_Bold;
-    }
-
-    .formBtn:hover {
-        background-color: black;
-        color: white;
-
-    }
-
-    .ftImg {
-        width: 100%;
-        margin-top: 340px;
-    }
-
-    @media only screen and (max-device-width: 480px) {
-        .imgDiv {
-            margin: 120px 0 0 0;
-        }
-
-        .ftImg {
-            margin-top: 350px;
-        }
-
-        .btnDiv {
-            margin: -105px 20px !important;
-        }
-
-        .text-center>img:nth-child(1) {
-            width: 430px;
-        }
-
-        .formInput,
-        .formBtn {
-            padding: 9px 10px;
-            font-size: 11px;
-        }
-
-        form {
-            margin: -80px 50px 0px 0px;
-        }
-
     }
 </style>
 

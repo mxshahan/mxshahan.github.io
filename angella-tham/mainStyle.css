@@ -16,7 +16,6 @@
 
 body {
     font-family: Orkney_Medium;
-    transition: 0.1s;
 }
 
 #logo {
@@ -43,30 +42,6 @@ body {
     display: none;
 }
 
-#loaderOwl>svg:nth-child(1) {
-    margin-top: -200px;
-}
-
-.backBTN,
-.frontBTN {
-    background-color: #d76a6a;
-    border: 1px solid #d76a6a;
-    color: #f3d7c3;
-    padding: 8px 25px;
-    border-radius: 5px;
-}
-
-.backBTN:hover {
-    color: white;
-    background-color: black;
-}
-
-.frontBTN:hover {
-    background-color: black;
-    color: white;
-}
-
-
 
 
 
@@ -92,7 +67,7 @@ body {
         display: none;
     }
 
-    #loaderOwl>svg:nth-child(1) {
-        margin-top: 0px;
+    .loader_bg {
+        margin: 0;
     }
 }
