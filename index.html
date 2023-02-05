@@ -1,38 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      a {
-        display: block;
-        padding: 5px 10px;
-      }
-    </style>
-  </head>
-  <body style="display: flex; align-items: center; justify-content: center">
-    <div class="grid grid-cols-4 m-5 gap-5">
-      <a href="/angella-tham" class="p-10 bg-slate-400 rounded-lg font-bold text-center">Angella Tham</a>
-      <a href="/giver/" class="p-10 bg-orange-400 rounded-lg font-bold text-center">Givver</a>
-      <a href="/materialize/" class="p-10 bg-red-400 rounded-lg font-bold text-center">Materialize</a>
-      <a href="/loan/" class="p-10 bg-red-400 rounded-lg font-bold text-center">Loan</a>
-      <a href="/proexp/" class="p-10 bg-red-400 rounded-lg font-bold text-center">ProExp</a>
-      <a href="/investor/" class="p-10 bg-red-400 rounded-lg font-bold text-center">Investor</a>
-      <a href="/template/" class="p-10 bg-red-400 rounded-lg font-bold text-center">Template</a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angella Tham</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link href="./Assets/favicon.png" type="image/x-icon" rel="icon" />
+</head>
+
+
+<body>
+    <div class="loader_bg" style="background-color: #f1d5c1; height: 100vh; overflow: hidden;">
+        <div id="loaderOwl"></div>
     </div>
-  </body>
+
+
+    <div class="body container-fluid" style="border: 20px solid #f3d7c3; height: 1000px; padding: 0;">
+        <div class="container" style="padding: 0;">
+            <header>
+                <a href="/">
+                    <div id="logo"></div>
+                </a>
+            </header>
+
+            <div class="mHomeContent">
+                <img src="./Assets/mobileContent.png" alt="">
+            </div>
+
+            <div class="row homeContent">
+                <div class="col-4 text-center hLeft">
+                    <div id="hello"></div>
+                </div>
+
+                <div class="col-8 text-center hRight">
+                    <img class="right img-fluid" src="./Assets/right.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div id="character"></div>
+
+            </div>
+        </div>
+
+        <footer>
+            <img class="img-fluid" style="width: 100%; margin-top: 130px;" src="./Assets/footer.png" alt="">
+
+            <div class="d-flex justify-content-between homeBtn">
+                <a href="./Pages/sayHi.html">
+                    <img style="width: 100px; margin: -170px 0 0 35px; border-radius: 6px;" src="./Assets/hi.png"
+                        alt="">
+                </a>
+
+                <a href="./Pages/design.html">
+                    <img style="margin: -170px 35px 0px 0px; width: 160px; border-radius: 6px;"
+                        src="./Assets/design.png" alt="">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+    <script src="./Assets/js/lottie.min.js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        setTimeout(function () {
+            $('.loader_bg').fadeToggle();
+        }, 1800);
+
+        $(document).ready(function () {
+            $('.body').hide().delay(1800).fadeIn('slow');
+        });
+
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('loaderOwl'),
+            path: './Assets/loader.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+        });
+
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('logo'),
+            path: 'Assets/logo.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+        });
+
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('character'),
+            path: './Assets/character.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+        });
+
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('hello'),
+            path: './Assets/hello.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+        });
+    </script>
+
+</body>
+
 </html>
