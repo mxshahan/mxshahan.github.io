@@ -1,197 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angella Tham</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./Assets/favicon.png" type="image/x-icon" rel="icon" />
-    <link rel="stylesheet" href="./Assets/style/style.css">
-
-</head>
-
-
-<body>
-    <div class="loaderlogoDiv" style="background-color: #f1d5c1;">
-        <a href="/">
-            <img style="width:170px; margin: 20px 0px 0px 20px;" src="./Assets/logoPng.png" alt="">
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      a {
+        display: block;
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body style="display: flex; align-items: center; justify-content: center">
+    <div class="grid grid-cols-4 m-5 gap-5">
+      <a href="/angella-tham" class="p-10 bg-slate-400 rounded-lg font-bold text-center">Angella Tham</a>
+      <a href="/giver/" class="p-10 bg-orange-400 rounded-lg font-bold text-center">Givver</a>
+      <a href="/materialize/" class="p-10 bg-red-400 rounded-lg font-bold text-center">Materialize</a>
+      <a href="/loan/" class="p-10 bg-red-400 rounded-lg font-bold text-center">Loan</a>
+      <a href="/proexp/" class="p-10 bg-red-400 rounded-lg font-bold text-center">ProExp</a>
+      <a href="/investor/" class="p-10 bg-red-400 rounded-lg font-bold text-center">Investor</a>
+      <a href="/template/" class="p-10 bg-red-400 rounded-lg font-bold text-center">Template</a>
+      <a href="/svg-ticket-manager" class="p-10 bg-red-400 rounded-lg font-bold text-center">SVG Ticker Manager</a>
     </div>
-    <div class="loader_bg">
-        <div id="loaderOwl"></div>
-    </div>
-
-
-    <div class="body container-fluid">
-        <div class="container" style="padding: 0;">
-            <header>
-                <a href="/">
-                    <div id="logo"></div>
-                </a>
-            </header>
-
-            <div class="mHomeContent">
-                <img src="./Assets/mobileContent.png" alt="">
-                <div class="mHRightCon">
-                    <h1 class="titleH1" style="font-size: 20px;">I’m Angella Tham —</h1>
-                    <p style="font-family: Orkney_Medium; color: #4C3D36; font-size: 12px;">A creative designer,
-                        illustrator, and
-                        doodler
-                        with 5+ years of experience turning brands into
-                        ones that pop. I'm passionate and detail-oriented, always coming up with innovative
-                        solutions
-                        and one-of-a-kind designs.</p>
-                </div>
-            </div>
-
-            <div class="homeContent d-flex text-center">
-                <div class="hLeft">
-                    <div id="hello"></div>
-                </div>
-
-                <div class="hRight">
-                    <img class="rightImg" src="./Assets/right.png" alt="">
-                    <div class="hRightCon">
-                        <h1 class="titleH1">I’m Angella Tham —</h1>
-                        <p style="font-family: Orkney_Medium; color: #4C3D36;">A creative designer, illustrator, and
-                            doodler
-                            with 5+ years of experience turning brands into
-                            ones that pop. I'm passionate and detail-oriented, always coming up with innovative
-                            solutions
-                            and one-of-a-kind designs.</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div>
-                <div id="character"></div>
-            </div>
-        </div>
-
-        <footer>
-            <img class="img-fluid" style="width: 100%; margin-top: 220px;" src="./Assets/footer.png" alt="">
-            <div class="d-flex justify-content-between btnDiv">
-                <a href="/sayHi.html" class="backBTN text-decoration-none backBTN"> <img style="width: 10px;"
-                        src="./Assets/goback.svg"> say hi </a>
-                <a href="./design.html" class="frontBTN text-decoration-none frontBTN">see my design <img
-                        src="./Assets/gofront.svg" style="width: 10px;"></a>
-            </div>
-        </footer>
-    </div>
-
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./Assets/js/script.js"></script>
-
-</body>
-
-<style>
-    .btnDiv {
-        margin: -95px 105px;
-    }
-
-    .right {
-        width: 100%;
-        text-align: left;
-        margin: 100px 0 0 0;
-    }
-
-    .body {
-        border: 20px solid #f3d7c3;
-        height: 1000px;
-        padding: 0;
-    }
-
-    .rightImg {
-        width: 750px;
-    }
-
-    .hLeft {
-        margin: 170px 0 0 50px;
-    }
-
-    .hRight {
-        margin: 120px 0 0 50px;
-    }
-
-    #hello {
-        width: 300px;
-    }
-
-    #character {
-        position: absolute;
-        margin: -145px 0 0 280px;
-    }
-
-    .hRightCon {
-        margin: -270px 0px 0px 109px;
-        width: 550px;
-        text-align: left;
-    }
-
-
-
-
-    @media only screen and (min-width: 340px) and (max-width: 600px) {
-        .btnDiv {
-            margin: -290px 0 0 94px;
-            width: 600px;
-            padding: 15px;
-        }
-
-        .homeContent {
-            display: none !important;
-        }
-
-        .mHomeContent img {
-            width: 300px;
-        }
-
-        .mHRightCon {
-            text-align: left;
-            width: 240px;
-            margin: -266px 0px 0 18%;
-        }
-
-        .btnDiv {
-            margin: -50px 0 0 0;
-            width: 100%;
-        }
-    }
-
-    @media only screen and (min-width: 320px) and (max-width: 340px) {
-        .mHomeContent img {
-            width: 270px;
-        }
-
-        .mHRightCon {
-            text-align: left;
-            width: 210px;
-            margin: -266px 0px 0 12%;
-        }
-
-        .btnDiv {
-            margin: -50px 0 0 0;
-            width: 100%;
-        }
-
-        .homeContent {
-            display: none !important;
-        }
-
-        footer img {
-            margin-top: 345px !important;
-        }
-    }
-</style>
-
+  </body>
 </html>
