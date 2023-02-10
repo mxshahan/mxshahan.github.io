@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./Assets/favicon.png" type="image/x-icon" rel="icon" />
+    <link rel="stylesheet" href="./Assets/style/style.css">
+    <title>My Design</title>
+</head>
+
+<body>
+    <div class="loaderlogoDiv" style="background-color: #f1d5c1;">
+        <a href="/">
+            <img style="width:170px; margin: 20px 0px 0px 20px;" src="./Assets/logoPng.png" alt="">
+        </a>
+    </div>
+    <div class="loader_bg">
+        <div id="loaderOwl"></div>
+    </div>
+
+
+    <div class="body container-fluid">
+        <div class="container" style="padding: 0;">
+            <header>
+                <a href="/">
+                    <div id="logo"></div>
+                </a>
+            </header>
+
+
+            <div class="text-center imgDiv">
+                <img class="imgBack" src=" ./Assets/formImg.png">
+                <form action="">
+                    <div class="d-flex justify-content-center mb-3">
+                        <img class="lock" src="./Assets/lock.svg">
+                        <h1 class="titleH1">what's the password?</h1>
+                    </div>
+                    <input type="text" class="formInput" placeholder="say the magic word...">
+                    <a href="./work.html" class="formBtn text-decoration-none">unlock portfolio</a>
+                </form>
+            </div>
+
+            <div class="text-center mImgDiv">
+                <img src=" ./Assets/formImg1.png" alt="">
+                <div class="d-flex justify-content-center mb-3 form320" style="margin: -190px 0px 15px 0;">
+                    <img class="lock" src="./Assets/lock.svg">
+                    <h1 class="titleH1">what's the password?</h1>
+                </div>
+                <form action="">
+                    <input type="text" class="formInput" placeholder="say the magic word...">
+                    <a href="./work.html" class="formBtn text-decoration-none">unlock portfolio</a>
+                </form>
+            </div>
+
+
+
+        </div>
+
+        <footer>
+            <img class="img-fluid ftImg" src="./Assets/footer1.png" alt="">
+            <div class="d-flex justify-content-between btnDiv">
+                <a href="/" class="backBTN text-decoration-none backBTN"><img style="width: 10px;"
+                        src="./Assets/goback.svg"> go back </a>
+                <a href="./sayHi.html" class="frontBTN text-decoration-none frontBTN">just wanna say hi <img
+                        src="./Assets/gofront.svg" style="width: 10px;"></a>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./Assets/js/script.js"></script>
+
+</body>
+
+<style>
+    body {
+        height: 1024px;
+        overflow: scroll;
+    }
+
+    .body {
+        border: 20px solid #f3d7c3;
+        padding: 0;
+        background-color: #f3d7c3;
+    }
+
+    form {
+        margin: -200px 90px 0px 0px;
+    }
+
+    .imgDiv {
+        margin: 100px 0 0 0
+    }
+
+    .imgBack {
+        width: 682px;
+    }
+
+    .lock {
+        width: 23px;
+        margin: -13px 10px 0px 0px;
+    }
+
+    .formInput {
+        padding: 17px 30px;
+        border: 1px solid white;
+        border-radius: 8px 0px 0px 8px;
+        color: #6B6462;
+    }
+
+    .formBtn {
+        padding: 19px 20px;
+        background-color: #d76a6a;
+        border: 1px solid #d76a6a;
+        margin: 0px 0px 0px -4px;
+        border-radius: 0px 8px 8px 0px;
+        color: #f3d7c3;
+        font-family: Orkney_Bold;
+    }
+
+    .formBtn:hover {
+        background-color: black;
+        color: white;
+
+    }
+
+    .ftImg {
+        width: 100%;
+        margin-top: 340px;
+    }
+
+    .mImgDiv {
+        display: none;
+    }
+
+    .btnDiv {
+        margin: -102px 100px 0 100px;
+    }
+
+    @media only screen and (min-width: 360px) and (max-width: 600px) {
+        .imgDiv {
+            display: none;
+        }
+
+        .mImgDiv {
+            display: block;
+            width: 100%;
+            margin: 100px 0 0 0;
+        }
+
+        .mImgDiv img {
+            width: 100%;
+        }
+
+        .ftImg {
+            margin-top: 440px;
+        }
+
+        .btnDiv {
+            margin: -45px 20px !important;
+        }
+
+        .formInput,
+        .formBtn {
+            padding: 9px 10px;
+            font-size: 11px;
+        }
+
+        .lock {
+            width: 20px !important;
+        }
+
+        form {
+            margin: 0;
+        }
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 360px) {
+        .form320 {
+            margin: -170px 0px 15px 0 !important;
+        }
+
+        .formInput,
+        .formBtn {
+            padding: 9px 3px !important;
+            font-size: 10px !important;
+        }
+
+        .titleH1 {
+            font-size: 20px;
+        }
+
+        .imgDiv {
+            display: none;
+        }
+
+        .mImgDiv {
+            display: block;
+            width: 100%;
+            margin: 100px 0 0 0;
+        }
+
+        .mImgDiv img {
+            width: 100%;
+        }
+
+        .ftImg {
+            margin-top: 440px;
+        }
+
+        .btnDiv {
+            margin: -45px 20px !important;
+        }
+
+        .formInput,
+        .formBtn {
+            padding: 9px 10px;
+            font-size: 11px;
+        }
+
+        .lock {
+            width: 20px !important;
+        }
+
+        form {
+            margin: 0;
+        }
+
+        .btnDiv {
+            margin: -35px 0px !important;
+        }
+    }
+</style>
+
+</html>
