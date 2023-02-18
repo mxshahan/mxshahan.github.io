@@ -1,1 +1,0 @@
-import{j as e}from"./index-fd1a4e94.js";import"./vendor-b2d02dd1.js";const r="/assets/resume-a21ade40.pdf",a=()=>e("div",{children:e("iframe",{src:r,style:{height:"100vh",width:"100%"},children:e("a",{href:r,children:"Download PDF"})})});export{a as default};
