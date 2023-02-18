@@ -1,0 +1,1 @@
+import{j as o}from"./index-ae7b47ed.js";const a=({children:r,className:e="",border:p=!1,...x})=>o("div",{...x,className:`relative min-h-screen overflow-hidden ${e} ${p?"xxl:border-[1vw] border-[20px] sm:border-[16px] border-default xxl:p-[2.5vw] p-[52px] sm:p-[24px]":"xxl:p-[3.5vw] p-[72px] sm:p-[40px]"}`,children:r});export{a as L};

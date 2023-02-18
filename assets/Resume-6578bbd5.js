@@ -1,1 +1,0 @@
-import{b as s,a as e}from"./index-31228e9b.js";const a="/assets/cv-df620366.jpg",c=()=>s(e,{className:"p-0 xl:px-64 lg:px-40 md:px-20 sm:px-0 flex items-center justify-center bg-default-dark",children:s("img",{src:a,alt:"My Resume",className:""})});export{c as default};
