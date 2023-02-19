@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aec3330c.css",
+    "main.js": "/static/js/main.b7563deb.js",
+    "static/media/girl.png": "/static/media/girl.5499d46e28db047811ce.png",
+    "static/media/intro-bg-mobile.svg": "/static/media/intro-bg-mobile.3e46fb9f26b299fef6e11294221b6294.svg",
+    "static/media/intro-bg.svg": "/static/media/intro-bg.d441f268d3273682aa1b8914a656df36.svg",
+    "static/media/orkney-bold.woff": "/static/media/orkney-bold.5b19d9806d03e0859ec5.woff",
+    "static/media/orkney-regular.woff": "/static/media/orkney-regular.9ed1c46d12fe1cc64aeb.woff",
+    "static/media/orkney-light.woff": "/static/media/orkney-light.f3a60dea101465ea24ec.woff",
+    "static/media/orkney-medium.woff": "/static/media/orkney-medium.1d9dbbd6778533ba0420.woff",
+    "static/media/fun-stuff.svg": "/static/media/fun-stuff.b6c94606bfe6c8b34281bd556d6f39eb.svg",
+    "static/media/works.svg": "/static/media/works.d6091bd9463970ecc3050f2de748d175.svg",
+    "static/media/footer-2.svg": "/static/media/footer-2.eebbf293d688e3f92392e1a8f0e5d2b0.svg",
+    "static/media/footer.svg": "/static/media/footer.bbc945ac4b54259838fb2ab2404436c2.svg",
+    "static/media/sayhi-footer.svg": "/static/media/sayhi-footer.bb5e3ee332c11cf74be58d48ccc30fd5.svg",
+    "static/media/lock.svg": "/static/media/lock.a2cff03675b2c7f100c2d5b8e144a73e.svg",
+    "static/media/paperclip.svg": "/static/media/paperclip.dbdfb696df1a4a8231bb93e5198d4b07.svg",
+    "index.html": "/index.html",
+    "main.aec3330c.css.map": "/static/css/main.aec3330c.css.map",
+    "main.b7563deb.js.map": "/static/js/main.b7563deb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aec3330c.css",
+    "static/js/main.b7563deb.js"
+  ]
+}
