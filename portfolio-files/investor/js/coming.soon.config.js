@@ -1,1 +1,0 @@
-(function($){$(document).ready(function(){var untilDate=new Date(2016,2-1,1);$(".countdown").countdown({until:untilDate,format:'dHMS',padZeroes:true});});})(this.jQuery);
